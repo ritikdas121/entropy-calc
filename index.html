@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entropy Calculator for ML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Entropy Calculator for ML</h1>
+    <div class="form-container">
+        <form id="entropyForm">
+            <label for="yes">Number of Yes:</label>
+            <input type="number" id="yes" min="0" step="1" required>
+            <label for="no">Number of No:</label>
+            <input type="number" id="no" min="0" step="1" required>
+            <button type="submit">Calculate Entropy</button>
+        </form>
+        <div id="error" class="error"></div>
+    </div>
+    <div class="formula-container" id="formula">
+        <h2>Entropy Formula</h2>
+        <p>Entropy (H) = - [ (p₁ * log₂(p₁)) + (p₂ * log₂(p₂)) ]</p>
+        <p>Where:</p>
+        <p>p₁ = Proportion of Yes (Yes / Total)</p>
+        <p>p₂ = Proportion of No (No / Total)</p>
+        <p>Total = Yes + No</p>
+        <p>If p₁ or p₂ = 0, that term is omitted as log₂(0) is undefined.</p>
+    </div>
+    <div class="result-container" id="result">
+        <h2>Result</h2>
+        <p><strong>Entropy:</strong> <span id="entropyResult">0</span></p>
+        <div class="steps" id="steps"></div>
+    </div>
+<script src="script.js"></script>
+
+</body>
+</html>
