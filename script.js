@@ -54,7 +54,7 @@ document.getElementById('entropyForm').addEventListener('submit', function(e) {
         steps.push(`No term: p₂ = 0, so term is omitted (log₂(0) is undefined).`);
     }
 
-    steps.push(`Entropy (H) = ${pYes > 0 ? 'Yes term' : ''}${pYes > 0 && pNo > 0 ? ' + ' : ''}${pNo > 0 ? 'No term' : ''} = ${entropy.toFixed(4)} bits`);
+    steps.push(`Entropy (H) = ${pYes > 0 ? 'Yes term' : ''}${pYes > 0 && pNo > 0 ? ' + ' : ''}${pNo > 0 ? 'No term' : ''} = ${entropy.toFixed(4)}`);
 
     // Display results
     entropyResult.textContent = entropy.toFixed(4);
