@@ -59,19 +59,19 @@ button:hover {
 }
 .error {
     color: #d32f2f;
-    font-size: 0.9em;
+    font-size: 1.2em;
     margin-bottom: 15px;
     text-align: center;
 }
 .steps {
-    font-size: 1em;
+    font-size: 1.2em;
     margin-top: 15px;
 }
 .steps p {
     margin: 5px 0;
 }
 .formula-container {
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
 }
 .formula-container p {
