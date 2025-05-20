@@ -41,7 +41,7 @@ document.getElementById('entropyForm').addEventListener('submit', function(e) {
     if (pYes > 0) {
         const yesTerm = -pYes * Math.log2(pYes);
         entropy += yesTerm;
-        steps.push(`Yes term: -p₁ * log₂(p₁) = -(${pYes.toFixed(4)}) * log₂(${pYes.toFixed(4)}) = ${yesTerm.toFixed(4)}`);
+        steps.push(`Yes term: -p₁ * log₂(p₁) = -(${pYes.toFixed(4)}) * log₂(${pYes.toFixed(4)}) = -${yesTerm.toFixed(4)}`);
     } else {
         steps.push(`Yes term: p₁ = 0, so term is omitted (log₂(0) is undefined).`);
     }
@@ -49,7 +49,7 @@ document.getElementById('entropyForm').addEventListener('submit', function(e) {
     if (pNo > 0) {
         const noTerm = -pNo * Math.log2(pNo);
         entropy += noTerm;
-        steps.push(`No term: -p₂ * log₂(p₂) = -(${pNo.toFixed(4)}) * log₂(${pNo.toFixed(4)}) = ${noTerm.toFixed(4)}`);
+        steps.push(`No term: -p₂ * log₂(p₂) = -(${pNo.toFixed(4)}) * log₂(${pNo.toFixed(4)}) = -${noTerm.toFixed(4)}`);
     } else {
         steps.push(`No term: p₂ = 0, so term is omitted (log₂(0) is undefined).`);
     }
